@@ -1,0 +1,43 @@
+{
+  "model_sha256": "cef2fd5b144b1c77a99792f55834d022ac3efad1eadf3684388d98bbbd76ba38",
+  "explainer_model_sha256": "cef2fd5b144b1c77a99792f55834d022ac3efad1eadf3684388d98bbbd76ba38",
+  "feature_names": [
+    "Age",
+    "Scholarship",
+    "Hypertension",
+    "Diabetes",
+    "Alcoholism",
+    "Handicap",
+    "SMS_received",
+    "Days_In_Advance",
+    "Appointment_Weekday",
+    "Appointment_Month",
+    "Scheduled_Hour",
+    "Gender_M"
+  ],
+  "selected_strategy": "unweighted",
+  "selected_on": "highest validation average precision in patient-grouped split",
+  "threshold": 0.18853782639129008,
+  "target_recall": 0.75,
+  "threshold_source": "patient-grouped validation split; illustrative screening target only",
+  "patient_grouped_test": {
+    "roc_auc": 0.7265494485479396,
+    "average_precision": 0.3555205746321408,
+    "brier_score": 0.14741942390134496,
+    "recall_at_threshold": 0.7277728873239436
+  },
+  "data_rows": 110521,
+  "dropped_rows": {
+    "invalid_target": 0,
+    "invalid_dates": 0,
+    "invalid_age": 1,
+    "negative_wait": 5,
+    "missing_patient_id": 0,
+    "missing_appointment_id": 0,
+    "invalid_gender": 0,
+    "duplicate_appointments": 0,
+    "rows_discarded": 6
+  },
+  "calibration": "sigmoid calibration fitted on validation data",
+  "not_for_clinical_use": true
+}
